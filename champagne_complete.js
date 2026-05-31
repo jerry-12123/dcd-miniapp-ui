@@ -15,8 +15,8 @@ const products = {
     subtitle: "统一零售价 · 精准贴敷 · 家庭常备",
     price: 128,
     sold: 2310,
-    image: "./assets/case_shoulder.jpg",
-    detailImage: "",
+    image: "./assets/patch_main.png",
+    detailImage: "./assets/patch_detail.png",
     point: "穴位贴统一零售价 128 元，适合家庭常备和高频复购场景。"
   },
   patchBundle: {
@@ -25,8 +25,8 @@ const products = {
     subtitle: "9800元 · 穴位贴76盒 · 批量囤货",
     price: 9800,
     sold: 168,
-    image: "./assets/case_back.jpg",
-    detailImage: "",
+    image: "./assets/patch_main.png",
+    detailImage: "./assets/patch_detail.png",
     point: "9800穴位贴套组给到 76 盒，适合门店、团队或家庭长期护理配置。"
   },
   comboBundle: {
