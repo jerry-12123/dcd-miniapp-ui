@@ -36,7 +36,7 @@
 
           <button class="searchbar" data-route="products">
             <i data-lucide="search"></i>
-            <span>搜索精华液、穴位贴、食养方案</span>
+            <span>搜索精油、穴位贴、9800套装</span>
           </button>
 
           <section class="hero-banner">
@@ -49,26 +49,26 @@
           </section>
 
           <section class="category-row">
-            <button data-route="products" data-filter="essence"><i data-lucide="sparkles"></i><span>臻萃精华</span></button>
+            <button data-route="products" data-filter="oil"><i data-lucide="sparkles"></i><span>精油</span></button>
             <button data-route="products" data-filter="patch"><i data-lucide="badge-plus"></i><span>穴位贴</span></button>
-            <button data-route="products" data-filter="food"><i data-lucide="leaf"></i><span>食养调理</span></button>
+            <button data-route="products" data-filter="bundle"><i data-lucide="package-check"></i><span>9800套装</span></button>
             <button data-route="brand"><i data-lucide="book-open-check"></i><span>文化底蕴</span></button>
           </section>
 
           <section class="panel">
             <div class="section-head"><h3>爆品推荐</h3><button data-route="products">全部</button></div>
             <div class="product-row">
-              <article class="product-card" data-detail="essence">
-                <img src="./assets/silk_bg.jpg" alt="植物臻萃精华液">
-                <b>植物臻萃精华液</b>
-                <span>经络养护 · 日常护理</span>
+              <article class="product-card" data-detail="oil">
+                <img src="./assets/silk_bg.jpg" alt="德承道精油">
+                <b>德承道精油</b>
+                <span>统一零售价 · 日常调理</span>
                 <strong>￥268</strong>
               </article>
               <article class="product-card" data-detail="patch">
-                <img src="./assets/case_shoulder.jpg" alt="穴位压力刺激贴">
-                <b>穴位压力刺激贴</b>
-                <span>精准贴敷 · 高频痛点</span>
-                <strong>￥89</strong>
+                <img src="./assets/case_shoulder.jpg" alt="德承道穴位贴">
+                <b>德承道穴位贴</b>
+                <span>统一零售价 · 家庭常备</span>
+                <strong>￥128</strong>
               </article>
             </div>
           </section>
@@ -93,37 +93,46 @@
 
           <div class="tabs">
             <button class="active" data-filter="hot">推荐</button>
-            <button data-filter="essence">经络护理</button>
+            <button data-filter="oil">精油</button>
             <button data-filter="patch">穴位贴</button>
-            <button data-filter="food">食养</button>
+            <button data-filter="bundle">套装</button>
           </div>
 
           <section class="product-list">
-            <article class="list-item featured" data-category="hot essence" data-detail="essence">
-              <img src="./assets/silk_bg.jpg" alt="植物臻萃精华液">
+            <article class="list-item featured" data-category="hot oil" data-detail="oil">
+              <img src="./assets/silk_bg.jpg" alt="德承道精油">
               <div>
                 <p>明星单品</p>
-                <h3>植物臻萃精华液</h3>
-                <span>适合日常经络养护、皮肤护理、调理后巩固。</span>
-                <div><strong>￥268</strong><button data-add="essence">加入购物车</button></div>
+                <h3>德承道精油</h3>
+                <span>精油统一零售售价 268 元，适合日常经络养护。</span>
+                <div><strong>￥268</strong><button data-add="oil">加入购物车</button></div>
               </div>
             </article>
             <article class="list-item" data-category="hot patch" data-detail="patch">
-              <img src="./assets/case_shoulder.jpg" alt="穴位压力刺激贴">
+              <img src="./assets/case_shoulder.jpg" alt="德承道穴位贴">
               <div>
                 <p>高频复购</p>
-                <h3>穴位压力刺激贴</h3>
-                <span>颈肩腰腿、局部酸胀、日常穴位护理。</span>
-                <div><strong>￥89</strong><button data-add="patch">购买</button></div>
+                <h3>德承道穴位贴</h3>
+                <span>穴位贴统一零售价 128 元，家庭常备护理。</span>
+                <div><strong>￥128</strong><button data-add="patch">购买</button></div>
               </div>
             </article>
-            <article class="list-item" data-category="hot food" data-detail="food">
-              <img src="./assets/garden.jpg" alt="食养调理方案">
+            <article class="list-item" data-category="hot bundle patch" data-detail="patchBundle">
+              <img src="./assets/case_back.jpg" alt="9800穴位贴套组">
               <div>
-                <p>线下同款</p>
-                <h3>食养调理方案</h3>
-                <span>谷豆菜搭配，配合日常运动与调理。</span>
-                <div><strong>￥199</strong><button data-add="food">查看</button></div>
+                <p>大客户套组</p>
+                <h3>9800穴位贴套组</h3>
+                <span>9800 元，穴位贴给到 76 盒，适合批量囤货。</span>
+                <div><strong>￥9800</strong><button data-add="patchBundle">加入购物车</button></div>
+              </div>
+            </article>
+            <article class="list-item" data-category="hot bundle oil patch" data-detail="comboBundle">
+              <img src="./assets/commerce_bg.jpg" alt="9800组合套装">
+              <div>
+                <p>组合套装</p>
+                <h3>9800组合套装</h3>
+                <span>精油 5 瓶 + 穴位贴 66 盒，产品组合更完整。</span>
+                <div><strong>￥9800</strong><button data-add="comboBundle">加入购物车</button></div>
               </div>
             </article>
           </section>
@@ -142,8 +151,8 @@
 
           <section class="detail-card">
             <p data-detail-tag>德承道甄选</p>
-            <h2 data-detail-title>植物臻萃精华液</h2>
-            <span data-detail-subtitle>植物臻萃 · 经络养护 · 调理后巩固</span>
+            <h2 data-detail-title>德承道精油</h2>
+            <span data-detail-subtitle>统一零售价 · 经络养护 · 日常调理</span>
             <div class="price-line"><strong data-detail-price>￥268</strong><em>已售 <span data-detail-sold>1286</span></em></div>
           </section>
 
@@ -217,9 +226,9 @@
           <section class="recommend-panel">
             <div class="section-head"><h3>顺手带上</h3><button data-route="products">去选购</button></div>
             <article class="mini-product" data-detail="patch">
-              <img src="./assets/case_shoulder.jpg" alt="穴位压力刺激贴">
-              <div><b>穴位压力刺激贴</b><span>家庭常备护理</span></div>
-              <strong>￥89</strong>
+              <img src="./assets/case_shoulder.jpg" alt="德承道穴位贴">
+              <div><b>德承道穴位贴</b><span>家庭常备护理</span></div>
+              <strong>￥128</strong>
             </article>
           </section>
 

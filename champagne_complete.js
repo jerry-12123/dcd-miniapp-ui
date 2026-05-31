@@ -1,39 +1,48 @@
 const products = {
-  essence: {
-    title: "植物臻萃精华液",
+  oil: {
+    title: "德承道精油",
     tag: "德承道甄选",
-    subtitle: "植物臻萃 · 经络养护 · 调理后巩固",
+    subtitle: "统一零售价 · 经络养护 · 日常调理",
     price: 268,
     sold: 1286,
     image: "./assets/silk_bg.jpg",
-    point: "源于东方食养与经络养护理念，适合日常护理。"
+    point: "精油统一零售售价 268 元，适合日常经络养护与调理后巩固。"
   },
   patch: {
-    title: "穴位压力刺激贴",
+    title: "德承道穴位贴",
     tag: "高频复购",
-    subtitle: "精准贴敷 · 高频痛点 · 家庭常备",
-    price: 89,
+    subtitle: "统一零售价 · 精准贴敷 · 家庭常备",
+    price: 128,
     sold: 2310,
     image: "./assets/case_shoulder.jpg",
-    point: "适合颈肩腰腿、局部酸胀等高频场景，便于日常贴敷护理。"
+    point: "穴位贴统一零售价 128 元，适合家庭常备和高频复购场景。"
   },
-  food: {
-    title: "食养调理方案",
-    tag: "线下同款",
-    subtitle: "谷豆菜搭配 · 日常食养 · 家庭调理",
-    price: 199,
-    sold: 742,
-    image: "./assets/garden.jpg",
-    point: "融合东方食养智慧与现代营养习惯，适合家庭日常执行。"
+  patchBundle: {
+    title: "9800穴位贴套组",
+    tag: "大客户套组",
+    subtitle: "9800元 · 穴位贴76盒 · 批量囤货",
+    price: 9800,
+    sold: 168,
+    image: "./assets/case_back.jpg",
+    point: "9800穴位贴套组给到 76 盒，适合门店、团队或家庭长期护理配置。"
+  },
+  comboBundle: {
+    title: "9800组合套装",
+    tag: "组合套装",
+    subtitle: "9800元 · 精油5瓶 + 穴位贴66盒",
+    price: 9800,
+    sold: 126,
+    image: "./assets/commerce_bg.jpg",
+    point: "9800组合套装包含精油 5 瓶和穴位贴 66 盒，兼顾护理体验与高频消耗。"
   }
 };
 
 const state = {
   page: "home",
   previousPage: "home",
-  currentProduct: "essence",
+  currentProduct: "oil",
   cart: {
-    essence: 1
+    patch: 1
   }
 };
 
