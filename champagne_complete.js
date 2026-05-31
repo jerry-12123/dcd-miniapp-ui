@@ -68,6 +68,36 @@ function renderIcons() {
   }
 }
 
+function bindCarousel() {
+  const slides = Array.from(document.querySelectorAll(".hero-slide"));
+  const dots = Array.from(document.querySelectorAll("[data-carousel-dot]"));
+  if (!slides.length) return;
+
+  let index = 0;
+  let timer;
+
+  const show = (next) => {
+    index = (next + slides.length) % slides.length;
+    slides.forEach((slide, current) => slide.classList.toggle("active", current === index));
+    dots.forEach((dot, current) => dot.classList.toggle("active", current === index));
+  };
+
+  const play = () => {
+    window.clearInterval(timer);
+    timer = window.setInterval(() => show(index + 1), 3600);
+  };
+
+  dots.forEach((dot, current) => {
+    dot.addEventListener("click", (event) => {
+      event.stopPropagation();
+      show(current);
+      play();
+    });
+  });
+
+  play();
+}
+
 function setPage(page) {
   state.previousPage = state.page === page ? state.previousPage : state.page;
   state.page = page;
@@ -257,6 +287,7 @@ function bindEvents() {
 
 window.addEventListener("DOMContentLoaded", () => {
   bindEvents();
+  bindCarousel();
   updateCartBadge();
   renderCart();
   renderIcons();

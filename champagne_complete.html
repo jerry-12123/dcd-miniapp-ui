@@ -39,19 +39,43 @@
             <span>搜索精油、穴位贴、套装</span>
           </button>
 
-          <section class="hero-banner">
-            <div>
-              <p>东方健康好物</p>
-              <h2>把有效调理带回日常</h2>
-              <button data-route="products" data-filter="hot">进入爆品专区</button>
+          <section class="hero-carousel" aria-label="首页轮播图">
+            <article class="hero-banner hero-slide active" data-slide="0">
+              <div>
+                <p>东方健康好物</p>
+                <h2>把有效调理带回日常</h2>
+                <button data-route="products" data-filter="hot">进入爆品专区</button>
+              </div>
+              <img src="./assets/dcd_logo_big.png" alt="德承道品牌">
+            </article>
+            <article class="hero-banner hero-slide" data-slide="1">
+              <div>
+                <p>植物臻萃精华液</p>
+                <h2>居家SPA · 身心舒缓</h2>
+                <button data-route="products" data-filter="oil">查看精油</button>
+              </div>
+              <img src="./assets/oil_main.png" alt="德承道精油">
+            </article>
+            <article class="hero-banner hero-slide" data-slide="2">
+              <div>
+                <p>穴位压力刺激贴</p>
+                <h2>经典配方 · 传承匠心</h2>
+                <button data-route="products" data-filter="patch">查看穴位贴</button>
+              </div>
+              <img src="./assets/patch_main.png" alt="德承道穴位贴">
+            </article>
+            <div class="carousel-dots" aria-label="轮播分页">
+              <button class="active" data-carousel-dot="0" aria-label="第1张"></button>
+              <button data-carousel-dot="1" aria-label="第2张"></button>
+              <button data-carousel-dot="2" aria-label="第3张"></button>
             </div>
-            <img src="./assets/dcd_logo_big.png" alt="德承道品牌">
           </section>
 
           <section class="category-row">
-            <button data-route="products" data-filter="oil"><i data-lucide="sparkles"></i><span>精油</span></button>
-            <button data-route="products" data-filter="patch"><i data-lucide="badge-plus"></i><span>穴位贴</span></button>
-            <button data-route="products" data-filter="bundle"><i data-lucide="package-check"></i><span>套装</span></button>
+            <button data-route="products"><i data-lucide="shopping-bag"></i><span>产品</span></button>
+            <button data-route="cases"><i data-lucide="image-play"></i><span>案例</span></button>
+            <button data-route="activities"><i data-lucide="calendar-days"></i><span>活动</span></button>
+            <button data-route="tech"><i data-lucide="sparkles"></i><span>特色技术</span></button>
           </section>
 
           <section class="panel">
@@ -210,6 +234,74 @@
               <div><b>18</b><span>直营店</span></div>
               <div><b>3000+</b><span>加盟店</span></div>
             </div>
+          </section>
+        </section>
+
+        <section class="page" data-page="cases">
+          <div class="page-head">
+            <h2>案例</h2>
+            <button class="icon-btn" data-route="home" aria-label="返回首页"><i data-lucide="home"></i></button>
+          </div>
+
+          <section class="case-card">
+            <div>
+              <p>调理案例</p>
+              <h3>穴位贴敷与日常肩颈调理</h3>
+              <span>以 PPT 中的现有素材先搭建“文字 + 图片 + 视频”的案例结构。后续可替换为真实客户授权素材、调理前后对比、门店服务记录与用户反馈。</span>
+            </div>
+            <img src="./assets/case_ppt_patch.png" alt="穴位贴敷案例图片">
+          </section>
+
+          <section class="case-video-panel">
+            <div class="section-head"><h3>案例视频</h3><button data-toast="后续可替换为真实案例视频">示例</button></div>
+            <video controls playsinline preload="metadata" poster="./assets/case_ppt_patch.png" src="./assets/case_video.mp4"></video>
+          </section>
+        </section>
+
+        <section class="page" data-page="activities">
+          <div class="page-head">
+            <h2>活动</h2>
+            <button class="icon-btn" data-route="home" aria-label="返回首页"><i data-lucide="home"></i></button>
+          </div>
+
+          <section class="empty-state-panel">
+            <i data-lucide="calendar-days"></i>
+            <h3>暂无活动</h3>
+            <span>后续可在这里放线下沙龙、门店体验、会员专享、直播预约等活动入口。</span>
+          </section>
+        </section>
+
+        <section class="page" data-page="tech">
+          <div class="page-head">
+            <h2>特色技术</h2>
+            <button class="icon-btn" data-route="home" aria-label="返回首页"><i data-lucide="home"></i></button>
+          </div>
+
+          <section class="tech-list">
+            <article>
+              <i data-lucide="hand"></i>
+              <div>
+                <p>技术一</p>
+                <h3>点穴按摩</h3>
+                <span>围绕经络穴位进行点按、放松与疏导，适合做成门店服务项目、专家手法介绍和预约转化页。</span>
+              </div>
+            </article>
+            <article>
+              <i data-lucide="wheat"></i>
+              <div>
+                <p>技术二</p>
+                <h3>食疗调理</h3>
+                <span>结合体质、季节与日常饮食习惯，输出更容易坚持的食养建议，可承接产品套餐与会员服务。</span>
+              </div>
+            </article>
+            <article>
+              <i data-lucide="activity"></i>
+              <div>
+                <p>技术三</p>
+                <h3>运动调理</h3>
+                <span>通过轻量动作、姿态训练与日常运动指导，帮助用户把调理融入生活场景。</span>
+              </div>
+            </article>
           </section>
         </section>
 
