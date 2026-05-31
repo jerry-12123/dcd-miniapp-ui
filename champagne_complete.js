@@ -5,7 +5,8 @@ const products = {
     subtitle: "统一零售价 · 经络养护 · 日常调理",
     price: 268,
     sold: 1286,
-    image: "./assets/silk_bg.jpg",
+    image: "./assets/oil_main.png",
+    detailImage: "./assets/oil_detail.png",
     point: "精油统一零售售价 268 元，适合日常经络养护与调理后巩固。"
   },
   patch: {
@@ -15,6 +16,7 @@ const products = {
     price: 128,
     sold: 2310,
     image: "./assets/case_shoulder.jpg",
+    detailImage: "",
     point: "穴位贴统一零售价 128 元，适合家庭常备和高频复购场景。"
   },
   patchBundle: {
@@ -24,6 +26,7 @@ const products = {
     price: 9800,
     sold: 168,
     image: "./assets/case_back.jpg",
+    detailImage: "",
     point: "9800穴位贴套组给到 76 盒，适合门店、团队或家庭长期护理配置。"
   },
   comboBundle: {
@@ -33,6 +36,7 @@ const products = {
     price: 9800,
     sold: 126,
     image: "./assets/commerce_bg.jpg",
+    detailImage: "",
     point: "9800组合套装包含精油 5 瓶和穴位贴 66 盒，兼顾护理体验与高频消耗。"
   }
 };
@@ -91,6 +95,15 @@ function openDetail(id) {
   document.querySelector("[data-detail-price]").textContent = money(product.price);
   document.querySelector("[data-detail-sold]").textContent = product.sold;
   document.querySelector("[data-detail-point1]").textContent = product.point;
+  const poster = document.querySelector("[data-detail-poster]");
+  const posterWrap = document.querySelector("[data-detail-poster-wrap]");
+  if (poster && posterWrap) {
+    posterWrap.hidden = !product.detailImage;
+    if (product.detailImage) {
+      poster.src = product.detailImage;
+      poster.alt = `${product.title}详情页`;
+    }
+  }
   setPage("detail");
 }
 

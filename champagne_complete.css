@@ -324,7 +324,7 @@ button svg,
 
 .category-row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 8px;
   padding: 0 18px 14px;
 }
@@ -349,6 +349,7 @@ button svg,
 .detail-card,
 .info-panel,
 .culture-mini,
+.detail-poster,
 .brand-hero,
 .brand-grid,
 .culture-card,
@@ -596,12 +597,30 @@ button svg,
   color: var(--cinnabar);
 }
 
-.culture-mini {
+.culture-mini,
+.detail-poster {
   display: grid;
   grid-template-columns: 82px 1fr;
   gap: 12px;
   align-items: center;
   padding: 12px;
+}
+
+.detail-poster {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+}
+
+.detail-poster[hidden] {
+  display: none;
+}
+
+.detail-poster img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .culture-mini img {
