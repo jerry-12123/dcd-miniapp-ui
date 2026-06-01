@@ -945,7 +945,7 @@ button svg,
   display: grid;
   grid-template-columns: 40px 1fr;
   gap: 12px;
-  align-items: center;
+  align-items: start;
   padding: 14px;
   border-bottom: 1px solid rgba(201, 154, 74, .18);
 }
@@ -973,6 +973,8 @@ button svg,
 .intro-grid b,
 .culture-points b,
 .value-flow b {
+  display: block;
+  margin-bottom: 5px;
   color: #7b3328;
   font-size: 16px;
 }
@@ -980,6 +982,7 @@ button svg,
 .intro-grid span,
 .culture-points span,
 .value-flow span {
+  display: block;
   color: #746457;
   font-size: 13px;
   line-height: 1.55;
