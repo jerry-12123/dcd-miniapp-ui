@@ -41,6 +41,33 @@ const products = {
   }
 };
 
+const techDetails = {
+  massage: {
+    title: "点穴按摩",
+    kicker: "经络穴位技术",
+    heading: "以穴入手，疏通日常紧张",
+    body: "通过经络穴位点按、推揉和局部放松，帮助用户理解身体紧张区域与日常调理路径。适合承接门店体验、技师服务介绍和预约转化。",
+    image: "./assets/body_map.jpg",
+    video: "./assets/case_video.mp4"
+  },
+  diet: {
+    title: "食疗调理",
+    kicker: "体质食养方案",
+    heading: "把调理放进一日三餐",
+    body: "围绕体质、季节、作息和饮食习惯，提供更容易坚持的食养建议。可与精油、穴位贴和会员服务组合成长期健康管理方案。",
+    image: "./assets/wisdom_bg.jpg",
+    video: "./assets/case_video.mp4"
+  },
+  movement: {
+    title: "运动调理",
+    kicker: "日常动养训练",
+    heading: "用轻量动作建立身体秩序",
+    body: "通过低门槛动作、姿态训练和呼吸节律，引导用户把调理融入生活场景，适合做成打卡课程、社群陪跑和门店复训内容。",
+    image: "./assets/energy_bg.jpg",
+    video: "./assets/case_video.mp4"
+  }
+};
+
 const state = {
   page: "home",
   previousPage: "home",
@@ -137,6 +164,22 @@ function openDetail(id) {
   setPage("detail");
 }
 
+function openTechDetail(id) {
+  const detail = techDetails[id] || techDetails.massage;
+  const image = document.querySelector("[data-tech-image]");
+  const video = document.querySelector("[data-tech-video]");
+  document.querySelector("[data-tech-title]").textContent = detail.title;
+  document.querySelector("[data-tech-kicker]").textContent = detail.kicker;
+  document.querySelector("[data-tech-heading]").textContent = detail.heading;
+  document.querySelector("[data-tech-body]").textContent = detail.body;
+  image.src = detail.image;
+  image.alt = `${detail.title}图文`;
+  video.poster = detail.image;
+  video.src = detail.video;
+  video.load();
+  setPage("techDetail");
+}
+
 function addToCart(id, quantity = 1) {
   state.cart[id] = (state.cart[id] || 0) + quantity;
   updateCartBadge();
@@ -225,6 +268,12 @@ function bindEvents() {
     const detail = event.target.closest("[data-detail]");
     if (detail && !event.target.closest("[data-add]")) {
       openDetail(detail.dataset.detail);
+      return;
+    }
+
+    const techDetail = event.target.closest("[data-tech-detail]");
+    if (techDetail) {
+      openTechDetail(techDetail.dataset.techDetail);
       return;
     }
 
