@@ -406,6 +406,103 @@ button svg,
   box-shadow: inset 0 0 0 1px rgba(201, 154, 74, .24);
 }
 
+.project-board {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  grid-template-rows: repeat(2, 92px);
+  gap: 8px;
+  margin: 0 18px 14px;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  align-content: space-between;
+  min-width: 0;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: left;
+  color: #fff9eb;
+  box-shadow: inset 0 0 0 1px rgba(255, 248, 232, .32), var(--shadow);
+}
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(36, 27, 22, .24), transparent 58%);
+  pointer-events: none;
+}
+
+.project-card.primary {
+  grid-row: span 2;
+  min-height: 192px;
+  background:
+    linear-gradient(135deg, rgba(142, 42, 31, .88), rgba(207, 140, 57, .76)),
+    url("./assets/diagnose_bg.jpg") center / cover;
+}
+
+.project-card.culture {
+  background:
+    linear-gradient(135deg, rgba(24, 105, 87, .9), rgba(201, 154, 74, .6)),
+    url("./assets/garden.jpg") center / cover;
+}
+
+.project-card.value {
+  background:
+    linear-gradient(135deg, rgba(151, 59, 43, .9), rgba(229, 122, 70, .72)),
+    url("./assets/heritage_bg.jpg") center / cover;
+}
+
+.project-card span,
+.project-card p,
+.project-card h3,
+.project-card em {
+  position: relative;
+  z-index: 1;
+}
+
+.project-card span {
+  color: rgba(255, 236, 205, .62);
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.project-card p {
+  margin-top: 2px;
+  color: #fff4d4;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.project-card h3 {
+  margin: 4px 0 10px;
+  font-size: 20px;
+  line-height: 1.18;
+}
+
+.project-card:not(.primary) h3 {
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.project-card em {
+  width: max-content;
+  height: 26px;
+  display: inline-grid;
+  place-items: center;
+  padding: 0 12px;
+  border-radius: 13px;
+  background: rgba(255, 250, 240, .92);
+  color: #8f2d22;
+  font-size: 12px;
+  font-weight: 900;
+  font-style: normal;
+}
+
 .panel,
 .strength-strip,
 .product-list,
@@ -775,6 +872,117 @@ button svg,
 .brand-grid span {
   color: var(--muted);
   font-size: 12px;
+}
+
+.intro-hero,
+.intro-grid,
+.culture-points,
+.value-flow {
+  margin: 0 18px 14px;
+  border-radius: 8px;
+  background: rgba(255, 253, 247, .93);
+  box-shadow: inset 0 0 0 1px rgba(201, 154, 74, .18), var(--shadow);
+}
+
+.intro-hero {
+  min-height: 210px;
+  display: grid;
+  align-content: end;
+  gap: 8px;
+  padding: 18px;
+  overflow: hidden;
+  color: var(--ivory);
+}
+
+.intro-hero.project {
+  background:
+    linear-gradient(180deg, rgba(36, 27, 22, .08), rgba(36, 27, 22, .66)),
+    url("./assets/diagnose_bg.jpg") center / cover;
+}
+
+.intro-hero.culture {
+  background:
+    linear-gradient(180deg, rgba(36, 27, 22, .06), rgba(36, 27, 22, .62)),
+    url("./assets/garden.jpg") center / cover;
+}
+
+.intro-hero.value {
+  background:
+    linear-gradient(180deg, rgba(36, 27, 22, .06), rgba(36, 27, 22, .66)),
+    url("./assets/heritage_bg.jpg") center / cover;
+}
+
+.intro-hero p {
+  color: #ffe5ad;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.intro-hero h2 {
+  max-width: 290px;
+  font-size: 26px;
+  line-height: 1.18;
+}
+
+.intro-hero span {
+  max-width: 300px;
+  color: rgba(255, 250, 240, .88);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.intro-grid,
+.culture-points,
+.value-flow {
+  display: grid;
+  gap: 0;
+  overflow: hidden;
+}
+
+.intro-grid article,
+.culture-points article,
+.value-flow div {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 14px;
+  border-bottom: 1px solid rgba(201, 154, 74, .18);
+}
+
+.culture-points article,
+.value-flow div {
+  grid-template-columns: 58px 1fr;
+}
+
+.intro-grid article:last-child,
+.culture-points article:last-child,
+.value-flow div:last-child {
+  border-bottom: 0;
+}
+
+.intro-grid svg {
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  border-radius: 8px;
+  background: #f5e5c6;
+  color: #8f2d22;
+}
+
+.intro-grid b,
+.culture-points b,
+.value-flow b {
+  color: #7b3328;
+  font-size: 16px;
+}
+
+.intro-grid span,
+.culture-points span,
+.value-flow span {
+  color: #746457;
+  font-size: 13px;
+  line-height: 1.55;
 }
 
 .culture-card {
