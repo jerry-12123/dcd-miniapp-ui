@@ -438,21 +438,15 @@ button svg,
 .project-card.primary {
   grid-row: span 2;
   min-height: 192px;
-  background:
-    linear-gradient(135deg, rgba(142, 42, 31, .88), rgba(207, 140, 57, .76)),
-    url("./assets/diagnose_bg.jpg") center / cover;
+  background: linear-gradient(135deg, #9f3b2d, #d59a4d);
 }
 
 .project-card.culture {
-  background:
-    linear-gradient(135deg, rgba(24, 105, 87, .9), rgba(201, 154, 74, .6)),
-    url("./assets/garden.jpg") center / cover;
+  background: linear-gradient(135deg, #0e6a58, #c99a4a);
 }
 
 .project-card.value {
-  background:
-    linear-gradient(135deg, rgba(151, 59, 43, .9), rgba(229, 122, 70, .72)),
-    url("./assets/heritage_bg.jpg") center / cover;
+  background: linear-gradient(135deg, #b45a37, #e8b96b);
 }
 
 .project-card span,
@@ -895,21 +889,15 @@ button svg,
 }
 
 .intro-hero.project {
-  background:
-    linear-gradient(180deg, rgba(36, 27, 22, .08), rgba(36, 27, 22, .66)),
-    url("./assets/diagnose_bg.jpg") center / cover;
+  background: linear-gradient(135deg, #9f3b2d, #d59a4d);
 }
 
 .intro-hero.culture {
-  background:
-    linear-gradient(180deg, rgba(36, 27, 22, .06), rgba(36, 27, 22, .62)),
-    url("./assets/garden.jpg") center / cover;
+  background: linear-gradient(135deg, #0e6a58, #c99a4a);
 }
 
 .intro-hero.value {
-  background:
-    linear-gradient(180deg, rgba(36, 27, 22, .06), rgba(36, 27, 22, .66)),
-    url("./assets/heritage_bg.jpg") center / cover;
+  background: linear-gradient(135deg, #b45a37, #e8b96b);
 }
 
 .intro-hero p {
