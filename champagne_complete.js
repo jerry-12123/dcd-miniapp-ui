@@ -84,7 +84,12 @@ const caseDetails = {
     title: "高低肩与脊柱弯曲调理记录",
     description: "资料认为，高低肩与脊柱弯曲与脏腑状态和经筋紧张粘连有关。案例展示通过调整脏腑和经筋根结后，身体外观状态出现改善。",
     highlight: "从身体表现出发，结合经络与经筋思路进行调理。",
-    image: "./assets/case_spine.png"
+    galleryTitle: "调理前后对比",
+    layout: "compare",
+    media: [
+      { src: "./assets/cases/spine_1.png", label: "调理前状态" },
+      { src: "./assets/cases/spine_2.png", label: "调理后状态" }
+    ]
   },
   eczema: {
     number: "案例三",
@@ -92,7 +97,12 @@ const caseDetails = {
     title: "三十年反复溃烂调理记录",
     description: "顾客从年幼时开始出现湿疹溃烂、流黄水和瘙痒，反复多年。PPT 案例记录了通过穴位点按数次后的皮肤状态变化。",
     highlight: "案例强调通过正确方法唤醒身体自我调节能力。",
-    image: "./assets/case_eczema.png"
+    galleryTitle: "皮肤状态对比",
+    layout: "compare",
+    media: [
+      { src: "./assets/cases/eczema_1.png", label: "调理前" },
+      { src: "./assets/cases/eczema_2.png", label: "调理后" }
+    ]
   },
   anal: {
     number: "案例四",
@@ -100,7 +110,13 @@ const caseDetails = {
     title: "及早干预的顾客反馈",
     description: "案例资料收录了顾客调理反馈与聊天记录，内容提到通过少量穴位点按进行早期干预，并记录症状变化。",
     highlight: "资料主张尽早关注身体信号，避免问题进一步发展。",
-    image: "./assets/case_anal.png"
+    galleryTitle: "顾客反馈记录",
+    layout: "stack",
+    media: [
+      { src: "./assets/cases/anal_1.png", label: "反馈记录一" },
+      { src: "./assets/cases/anal_2.png", label: "反馈记录二" },
+      { src: "./assets/cases/anal_3.png", label: "反馈记录三" }
+    ]
   },
   gout: {
     number: "案例五",
@@ -108,7 +124,12 @@ const caseDetails = {
     title: "尿酸600+的调理记录",
     description: "23岁顾客尿酸超过600，并伴随足跟红肿疼痛和行走困难。PPT 记录了穴位点按、穴位贴敷以及多次调理后的反馈与检测变化。",
     highlight: "案例资料记录了10至20次调理过程及顾客反馈。",
-    image: "./assets/case_gout.png"
+    galleryTitle: "顾客调理反馈",
+    layout: "stack",
+    media: [
+      { src: "./assets/cases/gout_1.png", label: "阶段反馈一" },
+      { src: "./assets/cases/gout_2.png", label: "阶段反馈二" }
+    ]
   },
   prostate: {
     number: "案例六",
@@ -116,7 +137,12 @@ const caseDetails = {
     title: "25天检查资料记录",
     description: "资料展示了顾客调理前后的检查报告，方案包含穴位点按、穴位刺激贴及配合日常产品，PPT 中记录周期为25天。",
     highlight: "通过前后检查资料呈现案例过程与变化。",
-    image: "./assets/case_prostate.png"
+    galleryTitle: "调理前后检查资料",
+    layout: "compare",
+    media: [
+      { src: "./assets/cases/prostate_1.png", label: "调理前检查" },
+      { src: "./assets/cases/prostate_2.png", label: "调理后检查" }
+    ]
   },
   breast1: {
     number: "案例七",
@@ -124,7 +150,13 @@ const caseDetails = {
     title: "经络疏通与检查资料",
     description: "案例从肝气郁结、气血不畅的传统调理思路出发，展示顾客聊天反馈以及调理前后的检查资料。",
     highlight: "用顾客反馈和检查资料记录调理过程。",
-    image: "./assets/case_breast_1.png"
+    galleryTitle: "顾客反馈记录",
+    layout: "stack",
+    media: [
+      { src: "./assets/cases/breast1_1.png", label: "调理沟通一" },
+      { src: "./assets/cases/breast1_2.png", label: "调理沟通二" },
+      { src: "./assets/cases/breast1_3.png", label: "调理反馈" }
+    ]
   },
   breast2: {
     number: "案例八",
@@ -132,7 +164,13 @@ const caseDetails = {
     title: "多位顾客完整反馈记录",
     description: "PPT 汇总了另一组乳腺增生顾客的调理记录，以多位顾客的文字反馈展示该调理思路的重复应用情况。",
     highlight: "多组顾客资料集中呈现，便于查看完整过程。",
-    image: "./assets/case_breast_2.png"
+    galleryTitle: "多位顾客反馈",
+    layout: "stack",
+    media: [
+      { src: "./assets/cases/breast2_1.png", label: "顾客反馈一" },
+      { src: "./assets/cases/breast2_2.png", label: "顾客反馈二" },
+      { src: "./assets/cases/breast2_3.png", label: "顾客反馈三" }
+    ]
   },
   fibroadenoma: {
     number: "案例九",
@@ -140,7 +178,13 @@ const caseDetails = {
     title: "检查报告与顾客反馈",
     description: "案例资料通过聊天记录和检查信息展示调理过程，内容围绕疏通相关经络、调理气血与身体状态展开。",
     highlight: "以检查资料和真实反馈作为案例记录依据。",
-    image: "./assets/case_fibroadenoma.png"
+    galleryTitle: "检查与反馈资料",
+    layout: "stack",
+    media: [
+      { src: "./assets/cases/fibro_1.png", label: "检查与沟通一" },
+      { src: "./assets/cases/fibro_2.png", label: "检查与沟通二" },
+      { src: "./assets/cases/fibro_3.png", label: "调理反馈" }
+    ]
   },
   floaters: {
     number: "案例十",
@@ -148,7 +192,12 @@ const caseDetails = {
     title: "顾客文字反馈记录",
     description: "资料记录了一位被告知缺少有效治疗方案的飞蚊症顾客，在经络调理后的主观反馈与日常状态变化。",
     highlight: "真实文字反馈呈现顾客对调理过程的感受。",
-    image: "./assets/case_floaters.png"
+    galleryTitle: "顾客反馈记录",
+    layout: "stack",
+    media: [
+      { src: "./assets/cases/floaters_1.png", label: "初次反馈" },
+      { src: "./assets/cases/floaters_2.png", label: "后续反馈" }
+    ]
   }
 };
 
@@ -283,9 +332,15 @@ function openCaseDetail(id) {
     document.querySelector("[data-case-after]").src = detail.after;
     document.querySelector("[data-case-after]").alt = `${detail.name}调理后`;
   } else {
-    const image = document.querySelector("[data-case-evidence-image]");
-    image.src = detail.image;
-    image.alt = `${detail.name}案例资料`;
+    const gallery = document.querySelector("[data-case-gallery]");
+    document.querySelector("[data-case-gallery-title]").textContent = detail.galleryTitle || "调理资料";
+    gallery.className = `case-media-gallery ${detail.layout || "stack"}`;
+    gallery.innerHTML = (detail.media || []).map((item) => `
+      <figure>
+        <figcaption>${item.label || detail.name}</figcaption>
+        <img src="${item.src}" alt="${detail.name}${item.label || "案例资料"}">
+      </figure>
+    `).join("");
   }
   setPage("caseDetail");
 }
