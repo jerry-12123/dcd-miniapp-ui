@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>德承道商城小程序交互网页</title>
-  <link rel="stylesheet" href="./champagne_complete.css">
+  <link rel="stylesheet" href="./champagne_complete.css?v=20260605-cases10">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
-  <script src="./champagne_complete.js" defer></script>
+  <script src="./champagne_complete.js?v=20260605-cases10" defer></script>
 </head>
 <body class="standalone-demo">
   <main class="prototype-shell">
@@ -315,30 +315,100 @@
 
         <section class="page" data-page="cases">
           <div class="page-head">
-            <h2>案例</h2>
+            <h2>调理案例</h2>
             <button class="icon-btn" data-route="home" aria-label="返回首页"><i data-lucide="home"></i></button>
+          </div>
+
+          <section class="case-list">
+            <button data-case-detail="shoulder">
+              <img src="./assets/case_after.png" alt="肩周炎案例">
+              <div><p>案例一</p><h3>肩周炎</h3><span>一次即可后背</span></div>
+              <i data-lucide="chevron-right"></i>
+            </button>
+            <button data-case-detail="spine">
+              <img src="./assets/case_spine.png" alt="脊柱侧弯案例">
+              <div><p>案例二</p><h3>脊柱侧弯</h3><span>高低肩与脊柱弯曲改善</span></div>
+              <i data-lucide="chevron-right"></i>
+            </button>
+            <button data-case-detail="eczema">
+              <img src="./assets/case_eczema.png" alt="湿疹案例">
+              <div><p>案例三</p><h3>湿疹</h3><span>三十年反复溃烂调理记录</span></div>
+              <i data-lucide="chevron-right"></i>
+            </button>
+            <button data-case-detail="anal">
+              <img src="./assets/case_anal.png" alt="肛裂与痔疮案例">
+              <div><p>案例四</p><h3>肛裂与痔疮</h3><span>及早干预的顾客反馈</span></div>
+              <i data-lucide="chevron-right"></i>
+            </button>
+            <button data-case-detail="gout">
+              <img src="./assets/case_gout.png" alt="高尿酸痛风案例">
+              <div><p>案例五</p><h3>高尿酸痛风</h3><span>尿酸600+调理记录</span></div>
+              <i data-lucide="chevron-right"></i>
+            </button>
+            <button data-case-detail="prostate">
+              <img src="./assets/case_prostate.png" alt="前列腺案例">
+              <div><p>案例六</p><h3>前列腺增大伴钙化囊肿</h3><span>25天检查记录</span></div>
+              <i data-lucide="chevron-right"></i>
+            </button>
+            <button data-case-detail="breast1">
+              <img src="./assets/case_breast_1.png" alt="乳腺增生案例一">
+              <div><p>案例七</p><h3>乳腺增生（一）</h3><span>调理前后检查资料</span></div>
+              <i data-lucide="chevron-right"></i>
+            </button>
+            <button data-case-detail="breast2">
+              <img src="./assets/case_breast_2.png" alt="乳腺增生案例二">
+              <div><p>案例八</p><h3>乳腺增生（二）</h3><span>多位顾客完整反馈</span></div>
+              <i data-lucide="chevron-right"></i>
+            </button>
+            <button data-case-detail="fibroadenoma">
+              <img src="./assets/case_fibroadenoma.png" alt="乳腺纤维瘤案例">
+              <div><p>案例九</p><h3>乳腺纤维瘤</h3><span>检查报告与调理反馈</span></div>
+              <i data-lucide="chevron-right"></i>
+            </button>
+            <button data-case-detail="floaters">
+              <img src="./assets/case_floaters.png" alt="飞蚊症案例">
+              <div><p>案例十</p><h3>飞蚊症（三）</h3><span>顾客文字反馈记录</span></div>
+              <i data-lucide="chevron-right"></i>
+            </button>
+          </section>
+
+          <p class="case-disclaimer">案例内容来自所提供的 PPT 资料，仅作项目案例展示，不构成医疗效果承诺。</p>
+        </section>
+
+        <section class="page detail-page" data-page="caseDetail">
+          <div class="detail-top">
+            <button class="icon-btn" data-route="cases" aria-label="返回案例列表"><i data-lucide="chevron-left"></i></button>
+            <h2 data-case-page-title>案例一</h2>
+            <button class="icon-btn" data-toast="案例内容来自项目资料" aria-label="案例说明"><i data-lucide="info"></i></button>
           </div>
 
           <section class="case-card case-story">
             <div>
-              <p>案例一：肩周炎</p>
-              <h3>一次即可后背</h3>
+              <p data-case-label>案例一：肩周炎</p>
+              <h3 data-case-title>一次即可后背</h3>
               <b>调理过程与效果</b>
-              <span>顾客原来手臂不能后背，也无法正常抬举，严重影响日常动作。点几个穴位，仅需几分钟，一次便可自如后背，疼痛感完全消失，只剩下一点点牵拉感。做到第四次的时候，牵拉感也完全消失，功能完全恢复正常。</span>
-              <em><i data-lucide="check-circle-2"></i>简单、快速、无创伤，这就是传统经络调理的优势所在。</em>
+              <span data-case-description>顾客原来手臂不能后背，也无法正常抬举，严重影响日常动作。点几个穴位，仅需几分钟，一次便可自如后背。</span>
+              <em><i data-lucide="check-circle-2"></i><span data-case-highlight>简单、快速、无创伤。</span></em>
             </div>
           </section>
 
-          <section class="case-compare-panel">
+          <section class="case-compare-panel" data-case-compare>
             <article>
               <p>调理前</p>
-              <img src="./assets/case_before.png" alt="肩周炎调理前">
+              <img data-case-before src="./assets/case_before.png" alt="调理前">
             </article>
             <article>
               <p>调理后</p>
-              <img src="./assets/case_after.png" alt="肩周炎调理后">
+              <img data-case-after src="./assets/case_after.png" alt="调理后">
             </article>
           </section>
+
+          <section class="case-evidence-panel" data-case-evidence hidden>
+            <div class="section-head"><h3>案例资料</h3><span>来源：汉经堂案例分享</span></div>
+            <img data-case-evidence-image src="./assets/case_spine.png" alt="案例资料">
+          </section>
+
+          <p class="case-disclaimer">内容来自所提供的 PPT 案例资料，仅作展示，不替代诊断、治疗或个体化医疗建议。</p>
         </section>
 
         <section class="page" data-page="activities">

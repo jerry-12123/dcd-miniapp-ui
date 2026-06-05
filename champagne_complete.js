@@ -68,6 +68,90 @@ const techDetails = {
   }
 };
 
+const caseDetails = {
+  shoulder: {
+    number: "案例一",
+    name: "肩周炎",
+    title: "一次即可后背",
+    description: "顾客原来手臂不能后背，也无法正常抬举，严重影响日常动作。点几个穴位，仅需几分钟，一次便可自如后背，疼痛感完全消失，只剩下一点点牵拉感。做到第四次的时候，牵拉感也完全消失，功能完全恢复正常。",
+    highlight: "简单、快速、无创伤，这就是传统经络调理的优势所在。",
+    before: "./assets/case_before.png",
+    after: "./assets/case_after.png"
+  },
+  spine: {
+    number: "案例二",
+    name: "脊柱侧弯",
+    title: "高低肩与脊柱弯曲调理记录",
+    description: "资料认为，高低肩与脊柱弯曲与脏腑状态和经筋紧张粘连有关。案例展示通过调整脏腑和经筋根结后，身体外观状态出现改善。",
+    highlight: "从身体表现出发，结合经络与经筋思路进行调理。",
+    image: "./assets/case_spine.png"
+  },
+  eczema: {
+    number: "案例三",
+    name: "湿疹",
+    title: "三十年反复溃烂调理记录",
+    description: "顾客从年幼时开始出现湿疹溃烂、流黄水和瘙痒，反复多年。PPT 案例记录了通过穴位点按数次后的皮肤状态变化。",
+    highlight: "案例强调通过正确方法唤醒身体自我调节能力。",
+    image: "./assets/case_eczema.png"
+  },
+  anal: {
+    number: "案例四",
+    name: "肛裂与痔疮",
+    title: "及早干预的顾客反馈",
+    description: "案例资料收录了顾客调理反馈与聊天记录，内容提到通过少量穴位点按进行早期干预，并记录症状变化。",
+    highlight: "资料主张尽早关注身体信号，避免问题进一步发展。",
+    image: "./assets/case_anal.png"
+  },
+  gout: {
+    number: "案例五",
+    name: "高尿酸痛风",
+    title: "尿酸600+的调理记录",
+    description: "23岁顾客尿酸超过600，并伴随足跟红肿疼痛和行走困难。PPT 记录了穴位点按、穴位贴敷以及多次调理后的反馈与检测变化。",
+    highlight: "案例资料记录了10至20次调理过程及顾客反馈。",
+    image: "./assets/case_gout.png"
+  },
+  prostate: {
+    number: "案例六",
+    name: "前列腺增大伴钙化囊肿",
+    title: "25天检查资料记录",
+    description: "资料展示了顾客调理前后的检查报告，方案包含穴位点按、穴位刺激贴及配合日常产品，PPT 中记录周期为25天。",
+    highlight: "通过前后检查资料呈现案例过程与变化。",
+    image: "./assets/case_prostate.png"
+  },
+  breast1: {
+    number: "案例七",
+    name: "乳腺增生（一）",
+    title: "经络疏通与检查资料",
+    description: "案例从肝气郁结、气血不畅的传统调理思路出发，展示顾客聊天反馈以及调理前后的检查资料。",
+    highlight: "用顾客反馈和检查资料记录调理过程。",
+    image: "./assets/case_breast_1.png"
+  },
+  breast2: {
+    number: "案例八",
+    name: "乳腺增生（二）",
+    title: "多位顾客完整反馈记录",
+    description: "PPT 汇总了另一组乳腺增生顾客的调理记录，以多位顾客的文字反馈展示该调理思路的重复应用情况。",
+    highlight: "多组顾客资料集中呈现，便于查看完整过程。",
+    image: "./assets/case_breast_2.png"
+  },
+  fibroadenoma: {
+    number: "案例九",
+    name: "乳腺纤维瘤",
+    title: "检查报告与顾客反馈",
+    description: "案例资料通过聊天记录和检查信息展示调理过程，内容围绕疏通相关经络、调理气血与身体状态展开。",
+    highlight: "以检查资料和真实反馈作为案例记录依据。",
+    image: "./assets/case_fibroadenoma.png"
+  },
+  floaters: {
+    number: "案例十",
+    name: "飞蚊症（三）",
+    title: "顾客文字反馈记录",
+    description: "资料记录了一位被告知缺少有效治疗方案的飞蚊症顾客，在经络调理后的主观反馈与日常状态变化。",
+    highlight: "真实文字反馈呈现顾客对调理过程的感受。",
+    image: "./assets/case_floaters.png"
+  }
+};
+
 const state = {
   page: "home",
   previousPage: "home",
@@ -180,6 +264,32 @@ function openTechDetail(id) {
   setPage("techDetail");
 }
 
+function openCaseDetail(id) {
+  const detail = caseDetails[id] || caseDetails.shoulder;
+  const compare = document.querySelector("[data-case-compare]");
+  const evidence = document.querySelector("[data-case-evidence]");
+  document.querySelector("[data-case-page-title]").textContent = detail.number;
+  document.querySelector("[data-case-label]").textContent = `${detail.number}：${detail.name}`;
+  document.querySelector("[data-case-title]").textContent = detail.title;
+  document.querySelector("[data-case-description]").textContent = detail.description;
+  document.querySelector("[data-case-highlight]").textContent = detail.highlight;
+
+  const hasComparison = Boolean(detail.before && detail.after);
+  compare.hidden = !hasComparison;
+  evidence.hidden = hasComparison;
+  if (hasComparison) {
+    document.querySelector("[data-case-before]").src = detail.before;
+    document.querySelector("[data-case-before]").alt = `${detail.name}调理前`;
+    document.querySelector("[data-case-after]").src = detail.after;
+    document.querySelector("[data-case-after]").alt = `${detail.name}调理后`;
+  } else {
+    const image = document.querySelector("[data-case-evidence-image]");
+    image.src = detail.image;
+    image.alt = `${detail.name}案例资料`;
+  }
+  setPage("caseDetail");
+}
+
 function addToCart(id, quantity = 1) {
   state.cart[id] = (state.cart[id] || 0) + quantity;
   updateCartBadge();
@@ -274,6 +384,12 @@ function bindEvents() {
     const techDetail = event.target.closest("[data-tech-detail]");
     if (techDetail) {
       openTechDetail(techDetail.dataset.techDetail);
+      return;
+    }
+
+    const caseDetail = event.target.closest("[data-case-detail]");
+    if (caseDetail) {
+      openCaseDetail(caseDetail.dataset.caseDetail);
       return;
     }
 
