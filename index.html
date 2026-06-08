@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>德承道商城小程序交互网页</title>
-  <link rel="stylesheet" href="./champagne_complete.css?v=20260605-two-cards">
+  <link rel="stylesheet" href="./champagne_complete.css?v=20260608-quick-entry">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
-  <script src="./champagne_complete.js?v=20260605-two-cards" defer></script>
+  <script src="./champagne_complete.js?v=20260608-quick-entry" defer></script>
 </head>
 <body class="standalone-demo">
   <main class="prototype-shell">
@@ -61,10 +61,10 @@
           </section>
 
           <section class="category-row">
-            <button data-route="products"><i data-lucide="shopping-bag"></i><span>产品</span></button>
-            <button data-route="cases"><i data-lucide="image-play"></i><span>案例</span></button>
             <button data-route="activities"><i data-lucide="calendar-days"></i><span>活动</span></button>
-            <button data-route="tech"><i data-lucide="sparkles"></i><span>特色技术</span></button>
+            <button data-route="cases"><i data-lucide="image-play"></i><span>案例</span></button>
+            <button data-route="tech"><i data-lucide="sparkles"></i><span>特殊技术</span></button>
+            <button data-route="appDownload"><i data-lucide="smartphone"></i><span>APP下载</span></button>
           </section>
 
           <section class="project-board" aria-label="项目与文化介绍">
@@ -420,7 +420,7 @@
 
         <section class="page" data-page="tech">
           <div class="page-head">
-            <h2>特色技术</h2>
+            <h2>特殊技术</h2>
             <button class="icon-btn" data-route="home" aria-label="返回首页"><i data-lucide="home"></i></button>
           </div>
 
@@ -457,7 +457,7 @@
 
         <section class="page detail-page tech-detail-page" data-page="techDetail">
           <div class="detail-top">
-            <button class="icon-btn" data-route="tech" aria-label="返回特色技术"><i data-lucide="chevron-left"></i></button>
+            <button class="icon-btn" data-route="tech" aria-label="返回特殊技术"><i data-lucide="chevron-left"></i></button>
             <h2 data-tech-title>点穴按摩</h2>
             <button class="icon-btn" data-toast="技术内容可继续补充真实素材" aria-label="说明"><i data-lucide="info"></i></button>
           </div>
@@ -475,6 +475,26 @@
           <section class="tech-video-panel">
             <div class="section-head"><h3>技术视频</h3><button data-toast="当前为占位视频，可替换为专属技术讲解">示例</button></div>
             <video data-tech-video controls playsinline preload="metadata" poster="./assets/body_map.jpg" src="./assets/case_video.mp4"></video>
+          </section>
+        </section>
+
+        <section class="page" data-page="appDownload">
+          <div class="page-head">
+            <h2>APP下载</h2>
+            <button class="icon-btn" data-route="home" aria-label="返回首页"><i data-lucide="home"></i></button>
+          </div>
+
+          <section class="app-download-panel">
+            <div class="app-download-mark">
+              <i data-lucide="smartphone"></i>
+            </div>
+            <p>德承道健康 APP</p>
+            <h3>健康服务，随身相伴</h3>
+            <span>下载地址配置完成后，可在这里直接下载安装。</span>
+            <div class="app-download-actions">
+              <button data-toast="安卓版下载地址待配置"><i data-lucide="download"></i><span>Android 下载</span></button>
+              <button data-toast="苹果版下载地址待配置"><i data-lucide="apple"></i><span>App Store 下载</span></button>
+            </div>
           </section>
         </section>
 
