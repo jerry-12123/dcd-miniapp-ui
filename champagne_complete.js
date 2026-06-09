@@ -72,7 +72,7 @@ const caseDetails = {
   shoulder: {
     number: "案例一",
     name: "肩周炎",
-    title: "一次即可后背",
+    title: "【肩周炎】商务局领导，一次即可后背",
     description: "顾客原来手臂不能后背，也无法正常抬举，严重影响日常动作。点几个穴位，仅需几分钟，一次便可自如后背，疼痛感完全消失，只剩下一点点牵拉感。做到第四次的时候，牵拉感也完全消失，功能完全恢复正常。",
     highlight: "简单、快速、无创伤，这就是传统经络调理的优势所在。",
     before: "./assets/case_before.png",
@@ -81,9 +81,9 @@ const caseDetails = {
   spine: {
     number: "案例二",
     name: "脊柱侧弯",
-    title: "高低肩与脊柱弯曲调理记录",
-    description: "资料认为，高低肩与脊柱弯曲与脏腑状态和经筋紧张粘连有关。案例展示通过调整脏腑和经筋根结后，身体外观状态出现改善。",
-    highlight: "从身体表现出发，结合经络与经筋思路进行调理。",
+    title: "脊柱侧弯",
+    description: "高低肩与脊柱弯曲，是脏腑问题和经筋紧张粘连的外在表现，并非单靠手术或整骨所能根治。",
+    highlight: "调整脏腑和经筋根结，仅需一次，高低肩和脊柱弯曲便能自我修复矫正。身体是最智能的存在——它早已通过独特的语言告诉我们：出了什么问题、什么原因引起的、应该如何调理。",
     galleryTitle: "调理前后对比",
     layout: "compare",
     media: [
@@ -94,9 +94,9 @@ const caseDetails = {
   eczema: {
     number: "案例三",
     name: "湿疹",
-    title: "三十年反复溃烂调理记录",
-    description: "顾客从年幼时开始出现湿疹溃烂、流黄水和瘙痒，反复多年。PPT 案例记录了通过穴位点按数次后的皮肤状态变化。",
-    highlight: "案例强调通过正确方法唤醒身体自我调节能力。",
+    title: "【湿疹】三十年反复溃烂，穴位点按数次神奇康复",
+    description: "从几岁起便开始湿疹溃烂流黄水，巨痒无比，多少大医院、多少名医治疗三十多年，反反复复始终未见根本好转。经络堂通过穴位点按数次便获得神奇效果。很多同行都不相信穴位点按能治湿疹——但案例，就在这里。",
+    highlight: "身体的自愈力，需要正确的方法来唤醒。",
     galleryTitle: "皮肤状态对比",
     layout: "compare",
     media: [
@@ -107,9 +107,9 @@ const caseDetails = {
   anal: {
     number: "案例四",
     name: "肛裂与痔疮",
-    title: "及早干预的顾客反馈",
-    description: "案例资料收录了顾客调理反馈与聊天记录，内容提到通过少量穴位点按进行早期干预，并记录症状变化。",
-    highlight: "资料主张尽早关注身体信号，避免问题进一步发展。",
+    title: "肛裂和痔疮",
+    description: "早调理，两三个穴位点按两次即可痊愈。",
+    highlight: "及早干预，避免走向手术的不归路。",
     galleryTitle: "顾客反馈记录",
     layout: "stack",
     media: [
@@ -121,9 +121,9 @@ const caseDetails = {
   gout: {
     number: "案例五",
     name: "高尿酸痛风",
-    title: "尿酸600+的调理记录",
-    description: "23岁顾客尿酸超过600，并伴随足跟红肿疼痛和行走困难。PPT 记录了穴位点按、穴位贴敷以及多次调理后的反馈与检测变化。",
-    highlight: "案例资料记录了10至20次调理过程及顾客反馈。",
+    title: "【高尿酸痛风】23岁，尿酸600+，10至20次恢复正常",
+    description: "汤汤老师，年仅23岁，尿酸却高达600多个点，足跟红肿疼痛，行走困难。仅通过点按几个穴位，痛感与牵拉感便完全消失。经过10至20次调理——仅点几个穴位、贴几个穴位贴——尿酸从600多个点恢复正常。",
+    highlight: "这样的案例已做了许多，但碍于同行的嘲讽和打压，不得不少说多做，让案例本身说话。",
     galleryTitle: "顾客调理反馈",
     layout: "stack",
     media: [
@@ -134,9 +134,9 @@ const caseDetails = {
   prostate: {
     number: "案例六",
     name: "前列腺增大伴钙化囊肿",
-    title: "25天检查资料记录",
-    description: "资料展示了顾客调理前后的检查报告，方案包含穴位点按、穴位刺激贴及配合日常产品，PPT 中记录周期为25天。",
-    highlight: "通过前后检查资料呈现案例过程与变化。",
+    title: "【前列腺增大伴钙化·囊肿】25天，全面康复",
+    description: "四个穴位点按并贴穴位刺激贴，每晚一粒酶基食品，25天时间，双肾输尿管、膀胱、前列腺全部康复，无任何异常。",
+    highlight: "那些动手术切除前列腺、尿不出来插导尿管，甚至癌变的……真是太痛苦太悲哀了！佛只渡有缘之人，水只润有根之草。",
     galleryTitle: "调理前后检查资料",
     layout: "compare",
     media: [
@@ -147,9 +147,9 @@ const caseDetails = {
   breast1: {
     number: "案例七",
     name: "乳腺增生（一）",
-    title: "经络疏通与检查资料",
-    description: "案例从肝气郁结、气血不畅的传统调理思路出发，展示顾客聊天反馈以及调理前后的检查资料。",
-    highlight: "用顾客反馈和检查资料记录调理过程。",
+    title: "【乳腺增生】经络疏通，消散于无形",
+    description: "乳腺增生在中医看来，是肝气郁结、气血不畅所致。通过疏通相关经络与脏腑调理，气血恢复正常流动，增生自然消散。",
+    highlight: "调理前后的检查报告，是最有力的证明。无需手术，无需长期服药，给身体一个自愈的机会。",
     galleryTitle: "顾客反馈记录",
     layout: "stack",
     media: [
@@ -161,9 +161,9 @@ const caseDetails = {
   breast2: {
     number: "案例八",
     name: "乳腺增生（二）",
-    title: "多位顾客完整反馈记录",
-    description: "PPT 汇总了另一组乳腺增生顾客的调理记录，以多位顾客的文字反馈展示该调理思路的重复应用情况。",
-    highlight: "多组顾客资料集中呈现，便于查看完整过程。",
+    title: "乳腺增生（二）",
+    description: "又一组乳腺增生调理前后的完整记录。多位顾客的案例数据汇聚在一起，印证了这一调理思路的可重复性与可靠性。",
+    highlight: "中医调理乳腺增生，不是偶然，而是有规律可循的系统性成果。",
     galleryTitle: "多位顾客反馈",
     layout: "stack",
     media: [
@@ -175,9 +175,9 @@ const caseDetails = {
   fibroadenoma: {
     number: "案例九",
     name: "乳腺纤维瘤",
-    title: "检查报告与顾客反馈",
-    description: "案例资料通过聊天记录和检查信息展示调理过程，内容围绕疏通相关经络、调理气血与身体状态展开。",
-    highlight: "以检查资料和真实反馈作为案例记录依据。",
+    title: "【乳腺纤维瘤】无创调理，检查报告说明一切",
+    description: "乳腺纤维瘤通常被西医建议手术切除，但通过疏通肝经、调理气血与免疫功能，纤维瘤可以在无创状态下逐步缩小乃至消失。",
+    highlight: "调理前后的超声检查报告清晰呈现了这一变化，让数据为传统中医智慧发声。",
     galleryTitle: "检查与反馈资料",
     layout: "stack",
     media: [
@@ -189,9 +189,9 @@ const caseDetails = {
   floaters: {
     number: "案例十",
     name: "飞蚊症（三）",
-    title: "顾客文字反馈记录",
-    description: "资料记录了一位被告知缺少有效治疗方案的飞蚊症顾客，在经络调理后的主观反馈与日常状态变化。",
-    highlight: "真实文字反馈呈现顾客对调理过程的感受。",
+    title: "飞蚊症（三）",
+    description: "又一位飞蚊症顾客的调理反馈记录。被西医告知无有效治疗方案的飞蚊症，在经络调理后得到显著改善。",
+    highlight: "这些真实的文字反馈，来自顾客最真诚的感受，是对传统中医调理价值最朴实的肯定与传播。",
     galleryTitle: "顾客反馈记录",
     layout: "stack",
     media: [
@@ -510,5 +510,10 @@ window.addEventListener("DOMContentLoaded", () => {
   bindCarousel();
   updateCartBadge();
   renderCart();
+  const exportCase = new URLSearchParams(window.location.search).get("exportCase");
+  if (exportCase && caseDetails[exportCase]) {
+    document.body.classList.add("case-export");
+    openCaseDetail(exportCase);
+  }
   renderIcons();
 });
