@@ -1603,7 +1603,8 @@ button svg,
   margin-top: 18px;
 }
 
-.app-download-actions button {
+.app-download-actions button,
+.app-download-actions a {
   height: 44px;
   display: flex;
   align-items: center;
@@ -1613,9 +1614,10 @@ button svg,
   color: var(--ivory);
   background: #2f241e;
   font-weight: 800;
+  text-decoration: none;
 }
 
-.app-download-actions button:first-child {
+.app-download-actions a:first-child {
   background: linear-gradient(135deg, #a94331, #cf873e);
 }
 
